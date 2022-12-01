@@ -1,0 +1,76 @@
+section#fitur{
+    background: url('../img/clipart/bg.jpg') no-repeat;
+    background-size: cover;
+    .container{
+        padding-top: 80px;
+        padding-bottom: 170px;
+
+        h1, h1 *{
+            font-family: 'Vidaloka';
+            font-size: 44px;
+            color: #33000E;
+            line-height: 60px;
+        }
+
+        .row{
+            margin-top: 73px;
+        }
+
+        .card{
+            padding: 35px 30px;
+            border-radius: 12px;
+            border-color: transparent;
+            box-shadow: 0px 6px 40px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 30px;
+            img{
+                width: 130px;
+                margin-bottom: 20px;
+            }
+            h3{
+                font-size: 28px;
+                font-weight: 700;
+                margin-bottom: 21px;
+            }
+            p{
+                font-size: 18px;
+                line-height: 29px;
+            }
+        }
+    }
+
+    @media (max-width:576px){
+        .container{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            h1, h1 *{
+                font-size: 35px;
+                line-height: 50px;
+                text-align: center;
+            }
+    
+            .row{
+                margin-top: 50px;
+            }
+
+            .card{
+                padding:15px;
+                margin-bottom: 25px;
+                img{
+                    width: 70px;
+                    margin-bottom: 20px;
+                }
+                h3{
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}

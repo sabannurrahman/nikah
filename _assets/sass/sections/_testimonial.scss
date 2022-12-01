@@ -1,0 +1,78 @@
+section#testimonial {
+    .container {
+        padding-top: 80px;
+        padding-bottom: 100px;
+
+        h1,
+        h1 * {
+            font-family: "Vidaloka";
+            font-size: 44px;
+            line-height: 60px;
+            margin-bottom: 77px;
+            span {
+                color: #890025;
+            }
+        }
+
+        .card {
+            padding: 30px 38px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            border-color: transparent;
+            box-shadow: 0px 6px 40px rgba(0, 0, 0, 0.1);
+            p {
+                font-size: 18px;
+                line-height: 29px;
+                color: #33000e;
+                margin-bottom: 33px;
+            }
+            .img-placeholder {
+                width: 60px;
+                height: 60px;
+                overflow: hidden;
+                border-radius: 50%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .name {
+                font-size: 18px;
+                font-weight: 700;
+            }
+            .occupant {
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        .container {
+            padding-top: 10px !important;
+            padding-bottom: 50px !important;
+            h1,h1 * {
+                font-size: 30px;
+                line-height: 40px;
+                margin-bottom: 50px;
+            }
+            .card {
+                padding: 25px;
+                margin-bottom: 10px;
+                p {
+                    font-size: 14px;
+                    line-height:unset;
+                    margin-bottom: 25px;
+                }
+                .img-placeholder {
+                    width: 40px;
+                    height: 40px;
+                }
+                .name {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

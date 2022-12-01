@@ -1,0 +1,114 @@
+section#harga {
+    background: url('../img/clipart/bg-pricing.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    .container {
+        padding-top: 80px;
+        padding-bottom: 100px;
+
+        h1,
+        h1 * {
+            font-family: "Vidaloka";
+            font-size: 44px;
+            color: #33000e;
+            line-height: 60px;
+            margin-bottom: 28px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .row:first-child {
+            margin-bottom: 145px !important;
+        }
+
+        .card {
+            border-radius: 12px;
+            border-color: transparent;
+            box-shadow: 0px 6px 40px rgba(0, 0, 0, 0.1);
+            padding: 0;
+            margin-bottom: 15px;
+            &.card-highlight {
+                background-color: #890025;
+                padding: 10px;
+                padding-top: 0px;
+                transform: translateY(-53px);
+                &::before {
+                    content: "Direkomendasikan";
+                    font-size: 18px;
+                    color: white;
+                    text-align: center;
+                    padding: 8px 0 15px 0;
+                    line-height: 29px;
+                }
+            }
+            .card-body {
+                padding: 35px 30px;
+                border-radius: 12px;
+                background-color: #fff;
+
+                h4 {
+                    text-align: center;
+                    font-size: 22px;
+                    margin-bottom: 16px;
+                    font-weight: 400;
+                }
+
+                h2 {
+                    text-align: center;
+                    font-size: 28px;
+                    font-weight: 700;
+                    margin-bottom: 44px;
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    padding-bottom: 40px;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 22px;
+                        img {
+                            height: 24px;
+                            margin-right: 18px;
+                        }
+                    }
+                }
+                .btn {
+                    padding: 20px 0;
+                    width: 100%;
+                    background-color: #890025;
+                    border-radius: 12px;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        .container {
+            .card.card-highlight {
+                transform: translateY(0);
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        .container {
+            padding-top: 50px !important;
+            padding-bottom: 50px !important;
+            h1,
+            h1 * {
+                font-size: 30px;
+                line-height: 40px;
+                text-align: center;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}

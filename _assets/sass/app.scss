@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Vidaloka&display=swap');
+
+* {
+    font-family: "DM Sans";
+    font-weight: 400;
+}
+
+html,
+body {
+    max-width: 100% !important;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    transition: all .4s ease !important;
+    &:hover{opacity: .5;}
+}
+
+.wrapper{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@import 'sections/navbar';
+@import 'sections/beranda';
+@import 'sections/tentang';
+@import 'sections/fitur';
+@import 'sections/template-video';
+@import 'sections/template-web';
+@import 'sections/harga';
+@import 'sections/testimonial';
+@import 'sections/closing';
+@import 'sections/footer';
+@import 'sections/modal';
+
+// sass --watch ./jasa-undangan/_assets/sass/app.scss:./jasa-undangan/_assets/css/app.min.css --style compressed

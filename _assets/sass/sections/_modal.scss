@@ -1,0 +1,19 @@
+.modal{
+    .modal-dialog{
+        .modal-content{
+            .btn-close{
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translateX(115%) scale(.9);
+                width: 20px;
+                height: 20px;
+                background-color: #fff;
+            }
+            .modal-body{
+                padding: 10px;
+                padding-bottom: 5px;
+            }
+        }
+    }
+}
